@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: type-8
-          image: docker.io/timattt/type-8:latest
+          image: quay.io/timattt/type-8:latest
           imagePullPolicy: Always
           env:
             - name: REACT_APP_TYPE8_CLIENT_ID
