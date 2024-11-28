@@ -1,0 +1,79 @@
+.create-test-page {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+
+    .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #6772e5; /* Purple color */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .question-group {
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .language-inputs {
+            display: flex;
+            gap: 20px;
+        }
+
+        .language-input {
+
+        }
+
+        .language-input input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .answers {
+            gap: 20px;
+            flex-wrap: wrap;
+            overflow-x: auto;
+        }
+
+
+        .answer-group {
+            min-width: 250px; /* Minimum width to avoid collapse*/
+            margin-top: 10px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+
+        button {
+            background-color: #6772e5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #add-question {
+            background-color: #4caf50;
+        }
+    }
+}

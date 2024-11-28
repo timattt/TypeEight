@@ -1,0 +1,29 @@
+.header-page {
+    background-color: #f0f0f0; /* Example background color */
+    padding-bottom: 5px;
+    padding-top: 20px;
+
+    nav ul {
+        list-style: none; /* Remove default bullet points */
+        margin: 0;
+        padding: 0;
+        text-align: center; /* Center the navigation items */
+    }
+
+    nav li {
+        display: inline; /* Arrange items horizontally */
+        margin: 0 10px; /* Add spacing between items */
+    }
+
+    nav a {
+        text-decoration: none; /* Remove default underline */
+        color: #333; /* Example text color */
+        padding: 5px 10px; /* Add padding to the links */
+        border-radius: 5px; /* Add rounded corners */
+        transition: background-color 0.3s ease; /* Add smooth transition effect */
+    }
+
+    nav a:hover {
+        background-color: #ddd; /* Change background color on hover */
+    }
+}

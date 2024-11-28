@@ -12,7 +12,7 @@ export default (props) => {
 
     useEffect(() => {
         if (authorized) {
-            navigate("/authorized")
+            navigate("/home")
         } else {
             dispatch(exchangeCodeToToken(code))
         }
