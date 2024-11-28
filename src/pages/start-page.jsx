@@ -1,4 +1,4 @@
-import '../styles/start-page.scss'
+import '../styles/start-page-styles.css'
 import {useDispatch} from "react-redux";
 import {performAuthorization} from "../store/actions/auth-actions";
 import { useTranslation } from 'react-i18next';
@@ -12,7 +12,7 @@ export default function StartPage() {
         localStorage.setItem('i18nextLng', lng);
     };
 
-    return <div className="top">
+    return <div className="start-page">
         <div className="container">
             <div className="header">
                 <img src="logo.png" alt="Логотип" className="logo"/>

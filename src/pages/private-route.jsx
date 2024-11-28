@@ -15,5 +15,5 @@ export default () => {
             dispatch(introspectToken())
         }
     }, [location, authorized])
-    return (authorized ? <Outlet/> : <Navigate to="/unauthorized"/>)
+    return (authorized ? <Outlet/> : <Navigate to="/"/>)
 }

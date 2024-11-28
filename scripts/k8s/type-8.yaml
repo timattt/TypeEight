@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: type-8
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: type-8
@@ -20,15 +20,15 @@ spec:
             - name: REACT_APP_TYPE8_CLIENT_ID
               valueFrom:
                 secretKeyRef:
-                  name: type-6-basic-secrets
+                  name: type-8-secrets
                   key: type_8_client_id
             - name: REACT_APP_TYPE8_CLIENT_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: type-6-basic-secrets
+                  name: type-8-secrets
                   key: type_8_client_secret
             - name: REACT_APP_TYPE8_REDIRECT_URI
-              value: https://pattern.mipt.io/code
+              value: https://quiz.mipt.io/code
             - name: REACT_APP_TYPE8_SERVER_IP
               value: https://sso.mipt.io
             - name: HTTPS
